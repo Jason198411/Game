@@ -53,9 +53,11 @@ function getRandomPhraseArray(arr){
 function addPhraseToDisplay(arr){
     for(let i = 0; i < arr.length; i++){
     	let li = document.createElement('li');
-    	if(arr[i] != " ")
-    	{
+    	if(arr[i] != " "){
     		li.className = 'letter';
+    		
+    	}else{
+    		li.className = 'space';
     	}
     	li.textContent = arr[i]
     	phraseUl.appendChild(li);
